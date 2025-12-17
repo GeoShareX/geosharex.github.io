@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden bg-white">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden bg-black">
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         {/* Logo */}
         <div className="mb-8">
@@ -22,7 +22,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-black"
+          className="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-white"
         >
           GeoShare<span className="text-gray-500">X</span>
         </motion.h1>
@@ -31,7 +31,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-          className="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed"
+          className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed"
         >
           Share your location. Connect with your people.
         </motion.p>
@@ -48,7 +48,7 @@ export function HeroSection() {
         <div>
           <a
             href="#download"
-            className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-800 transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-full text-lg font-medium hover:bg-gray-200 transition-all duration-300 hover:scale-105"
           >
             Get Started
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,8 +59,8 @@ export function HeroSection() {
       </div>
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2">
-        <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-gray-400 rounded-full animate-bounce" />
+        <div className="w-6 h-10 border-2 border-gray-600 rounded-full flex justify-center pt-2">
+          <div className="w-1.5 h-3 bg-gray-600 rounded-full animate-bounce" />
         </div>
       </div>
     </section>

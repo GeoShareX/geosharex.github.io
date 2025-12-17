@@ -57,11 +57,11 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-gray-50">
+    <section className="py-24 px-6 bg-gray-950">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black">Why GeoShareX?</h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Why GeoShareX?</h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             Everything you need to stay connected with the people who matter most.
           </p>
         </div>
@@ -70,13 +70,13 @@ export function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group p-8 border border-gray-200 rounded-2xl hover:border-gray-400 transition-all duration-300 hover:shadow-lg bg-white"
+              className="group p-8 border border-gray-800 rounded-2xl hover:border-gray-600 transition-all duration-300 hover:shadow-lg bg-gray-900"
             >
-              <div className="mb-6 text-gray-500 group-hover:text-black transition-colors duration-300">
+              <div className="mb-6 text-gray-500 group-hover:text-white transition-colors duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-black">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-white">{feature.title}</h3>
+              <p className="text-gray-400 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

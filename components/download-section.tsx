@@ -86,7 +86,7 @@ const itemVariants = {
 
 export function DownloadSection() {
   return (
-    <section id="download" className="py-24 px-6 bg-white text-black">
+    <section id="download" className="py-24 px-6 bg-black text-white">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -95,7 +95,7 @@ export function DownloadSection() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Download GeoShareX</h2>
-          <p className="text-gray-600 text-lg mb-12">
+          <p className="text-gray-400 text-lg mb-12">
             Available on all major platforms. Start sharing your location today.
           </p>
         </motion.div>
@@ -116,7 +116,7 @@ export function DownloadSection() {
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
-              className="flex items-center justify-center gap-3 bg-black text-white px-6 py-4 rounded-xl font-medium hover:bg-gray-800 transition-colors duration-300"
+              className="flex items-center justify-center gap-3 bg-white text-black px-6 py-4 rounded-xl font-medium hover:bg-gray-200 transition-colors duration-300"
             >
               {platform.icon}
               <span>{platform.name}</span>
@@ -126,9 +126,9 @@ export function DownloadSection() {
 
         <div className="mt-16">
           <p className="text-gray-500 text-sm mb-4">Or scan to download</p>
-          <div className="inline-block p-4 bg-gray-100 rounded-2xl">
-            <div className="w-32 h-32 bg-gray-200 rounded-lg flex items-center justify-center">
-              <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="inline-block p-4 bg-gray-900 rounded-2xl border border-gray-800">
+            <div className="w-32 h-32 bg-gray-800 rounded-lg flex items-center justify-center">
+              <svg className="w-16 h-16 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
