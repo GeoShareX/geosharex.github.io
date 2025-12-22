@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Footer } from "@/components/footer"
+import { ThemeToggle } from "@/components/theme-toggle"
 import Link from "next/link"
 
 export default function ContactPage() {
@@ -34,10 +35,11 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <header className="py-6 px-6 border-b border-gray-800">
+    <div className="min-h-screen bg-background text-foreground">
+      <ThemeToggle />
+      <header className="py-6 px-6 border-b border-border">
         <div className="max-w-4xl mx-auto">
-          <Link href="/" className="text-xl font-semibold hover:text-gray-300 transition-colors">
+          <Link href="/" className="text-xl font-semibold hover:text-muted-foreground transition-colors">
             GeoShareX
           </Link>
         </div>
@@ -46,7 +48,7 @@ export default function ContactPage() {
       <main className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-          <p className="text-gray-400 mb-12 text-lg">
+          <p className="text-muted-foreground mb-12 text-lg">
             Have questions, feedback, or just want to say hello? We&apos;d love to hear from you.
           </p>
 
@@ -56,21 +58,21 @@ export default function ContactPage() {
               <h2 className="text-2xl font-semibold mb-6">Send a Message</h2>
 
               {submitted ? (
-                <div className="bg-gray-900 rounded-lg p-6 border border-gray-800">
+                <div className="bg-card rounded-lg p-6 border border-border">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-green-900/50 rounded-lg flex items-center justify-center">
-                      <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-10 h-10 bg-green-900/50 dark:bg-green-900/50 rounded-lg flex items-center justify-center">
+                      <svg className="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <h3 className="text-lg font-medium">Message Sent!</h3>
                   </div>
-                  <p className="text-gray-400">
+                  <p className="text-muted-foreground">
                     Thank you for reaching out. We&apos;ll get back to you as soon as possible.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="mt-4 text-white underline hover:text-gray-300"
+                    className="mt-4 text-foreground underline hover:text-muted-foreground"
                   >
                     Send another message
                   </button>
@@ -88,7 +90,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:border-gray-600 transition-colors"
+                      className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-muted-foreground transition-colors"
                       placeholder="Your name"
                     />
                   </div>
@@ -104,7 +106,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:border-gray-600 transition-colors"
+                      className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-muted-foreground transition-colors"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -119,7 +121,7 @@ export default function ContactPage() {
                       value={formData.subject}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:border-gray-600 transition-colors"
+                      className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-muted-foreground transition-colors"
                     >
                       <option value="">Select a subject</option>
                       <option value="general">General Inquiry</option>
@@ -142,7 +144,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 bg-gray-900 border border-gray-800 rounded-lg focus:outline-none focus:border-gray-600 transition-colors resize-none"
+                      className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:border-muted-foreground transition-colors resize-none"
                       placeholder="How can we help you?"
                     />
                   </div>
@@ -150,7 +152,7 @@ export default function ContactPage() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </button>
@@ -163,9 +165,9 @@ export default function ContactPage() {
               <h2 className="text-2xl font-semibold mb-6">Other Ways to Reach Us</h2>
 
               <div className="space-y-6">
-                <div className="bg-gray-900 rounded-lg p-6 border border-gray-800">
+                <div className="bg-card rounded-lg p-6 border border-border">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
@@ -174,15 +176,15 @@ export default function ContactPage() {
                   </div>
                   <a
                     href="mailto:hello@geosharex.com"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     hello@geosharex.com
                   </a>
                 </div>
 
-                <div className="bg-gray-900 rounded-lg p-6 border border-gray-800">
+                <div className="bg-card rounded-lg p-6 border border-border">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                       </svg>
@@ -191,15 +193,15 @@ export default function ContactPage() {
                   </div>
                   <a
                     href="mailto:support@geosharex.com"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     support@geosharex.com
                   </a>
                 </div>
 
-                <div className="bg-gray-900 rounded-lg p-6 border border-gray-800">
+                <div className="bg-card rounded-lg p-6 border border-border">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
                       </svg>
@@ -208,15 +210,15 @@ export default function ContactPage() {
                   </div>
                   <a
                     href="mailto:press@geosharex.com"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     press@geosharex.com
                   </a>
                 </div>
 
-                <div className="bg-gray-900 rounded-lg p-6 border border-gray-800">
+                <div className="bg-card rounded-lg p-6 border border-border">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center">
+                    <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
@@ -225,16 +227,16 @@ export default function ContactPage() {
                   </div>
                   <a
                     href="mailto:business@geosharex.com"
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     business@geosharex.com
                   </a>
                 </div>
               </div>
 
-              <div className="mt-8 p-6 bg-gradient-to-r from-gray-900 to-gray-800 rounded-lg border border-gray-700">
+              <div className="mt-8 p-6 bg-secondary rounded-lg border border-border">
                 <h3 className="font-medium mb-2">Response Time</h3>
-                <p className="text-gray-400 text-sm">
+                <p className="text-muted-foreground text-sm">
                   We typically respond to all inquiries within 24-48 hours during business days.
                   For urgent technical issues, please include &quot;URGENT&quot; in your subject line.
                 </p>

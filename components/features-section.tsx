@@ -57,11 +57,11 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-gray-950">
+    <section className="py-24 px-6 bg-secondary">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Why GeoShareX?</h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">Why GeoShareX?</h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Everything you need to stay connected with the people who matter most.
           </p>
         </div>
@@ -70,13 +70,13 @@ export function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group p-8 border border-gray-800 rounded-2xl hover:border-gray-600 transition-all duration-300 hover:shadow-lg bg-gray-900"
+              className="group p-8 border border-border rounded-2xl hover:border-muted-foreground/50 transition-all duration-300 hover:shadow-lg bg-card"
             >
-              <div className="mb-6 text-gray-500 group-hover:text-white transition-colors duration-300">
+              <div className="mb-6 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">{feature.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">{feature.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
