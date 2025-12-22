@@ -10,7 +10,7 @@ export function HeroSection() {
         {/* Logo */}
         <div className="mb-8">
           <Image
-            src="/images/unnamed.jpg"
+            src="/logo.svg"
             alt="GeoShareX Logo"
             width={120}
             height={120}

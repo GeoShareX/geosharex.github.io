@@ -14,20 +14,7 @@ export const metadata: Metadata = {
     "GeoShareX is a location-sharing app that lets users create groups, share location pins on a map, and collaborate with friends and family.",
   generator: "v0.app",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
+    icon: "/logo.svg",
     apple: "/apple-icon.png",
   },
 }
