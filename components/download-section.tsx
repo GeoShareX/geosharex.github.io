@@ -23,7 +23,7 @@ const platforms = [
   },
   {
     name: "Web App",
-    url: "https://app.geosharex.com",
+    url: "https://app.geosharex.it",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path

@@ -184,10 +184,10 @@ export default function ContactPage() {
                     <h3 className="font-medium">General Inquiries</h3>
                   </div>
                   <a
-                    href="mailto:hello@geosharex.com"
+                    href="mailto:hello@geosharex.it"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    hello@geosharex.com
+                    hello@geosharex.it
                   </a>
                 </div>
 
@@ -201,10 +201,10 @@ export default function ContactPage() {
                     <h3 className="font-medium">Technical Support</h3>
                   </div>
                   <a
-                    href="mailto:support@geosharex.com"
+                    href="mailto:support@geosharex.it"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    support@geosharex.com
+                    support@geosharex.it
                   </a>
                 </div>
 
@@ -218,10 +218,10 @@ export default function ContactPage() {
                     <h3 className="font-medium">Press & Media</h3>
                   </div>
                   <a
-                    href="mailto:press@geosharex.com"
+                    href="mailto:press@geosharex.it"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    press@geosharex.com
+                    press@geosharex.it
                   </a>
                 </div>
 
@@ -235,10 +235,10 @@ export default function ContactPage() {
                     <h3 className="font-medium">Business & Partnerships</h3>
                   </div>
                   <a
-                    href="mailto:business@geosharex.com"
+                    href="mailto:business@geosharex.it"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
-                    business@geosharex.com
+                    business@geosharex.it
                   </a>
                 </div>
               </div>

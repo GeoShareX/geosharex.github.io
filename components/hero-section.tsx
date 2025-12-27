@@ -33,7 +33,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed"
         >
-          Share your location. Connect with your people.
+          Navigate together, arrive together
         </motion.p>
 
         <motion.p
@@ -42,7 +42,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="text-base md:text-lg text-muted-foreground/70 max-w-2xl mx-auto mb-12"
         >
-          Create groups, share location pins on a map, and collaborate seamlessly with friends and family.
+          Share your location with friends and navigate to meetup points together in real-time
         </motion.p>
 
         <div>

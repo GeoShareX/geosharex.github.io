@@ -120,10 +120,10 @@ export default function SupportPage() {
                     Send us an email and we&apos;ll get back to you within 24-48 hours.
                   </p>
                   <a
-                    href="mailto:support@geosharex.com"
+                    href="mailto:support@geosharex.it"
                     className="text-foreground underline hover:text-muted-foreground"
                   >
-                    support@geosharex.com
+                    support@geosharex.it
                   </a>
                 </div>
 
@@ -161,7 +161,7 @@ export default function SupportPage() {
                   <li>Screenshots if applicable</li>
                 </ul>
                 <a
-                  href="mailto:bugs@geosharex.com"
+                  href="mailto:bugs@geosharex.it"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors"
                 >
                   Report Bug

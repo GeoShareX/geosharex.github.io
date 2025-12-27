@@ -109,8 +109,8 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-semibold mb-4">8. Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
                 If you have questions about this privacy policy or your data, please contact us at{" "}
-                <a href="mailto:privacy@geosharex.com" className="text-foreground underline hover:text-muted-foreground">
-                  privacy@geosharex.com
+                <a href="mailto:privacy@geosharex.it" className="text-foreground underline hover:text-muted-foreground">
+                  privacy@geosharex.it
                 </a>
               </p>
             </section>

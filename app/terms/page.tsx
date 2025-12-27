@@ -140,8 +140,8 @@ export default function TermsPage() {
               <h2 className="text-2xl font-semibold mb-4">12. Contact</h2>
               <p className="text-muted-foreground leading-relaxed">
                 For questions about these Terms of Service, please contact us at{" "}
-                <a href="mailto:legal@geosharex.com" className="text-foreground underline hover:text-muted-foreground">
-                  legal@geosharex.com
+                <a href="mailto:legal@geosharex.it" className="text-foreground underline hover:text-muted-foreground">
+                  legal@geosharex.it
                 </a>
               </p>
             </section>
